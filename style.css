@@ -36,7 +36,7 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .game {
@@ -45,6 +45,17 @@ html, body {
     justify-content: center;
     align-items: center;
     gap: 0;
+}
+
+@media (max-width: 768px) {
+    .game-box {
+        margin-top: 30%;
+        margin-bottom: 30%;
+        height: 50%;
+        width: 90%; /* Adjusts the width for smaller screens */
+        padding: 10px; /* Adjusts padding for smaller screens */
+        padding-bottom: none;
+    }
 }
 
 .box {
@@ -71,6 +82,12 @@ html, body {
     color: white;
     border: none;
     cursor: pointer;
+}
+
+.reset:active {
+    border: 2px solid white;
+    background-color: #333;
+    color: black;
 }
 
 .winner-message, .draw-message {

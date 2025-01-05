@@ -18,6 +18,9 @@ const showWinner = (winner) => {
     const winnerSpan = document.getElementById('winner');
     winnerSpan.innerText = winner;
     winnerMessage.classList.remove('hide');
+    for (let box of boxes) {
+        box.classList.add('occupied');
+    }
 }
 
 const checkWinner = () => {
