@@ -19,7 +19,7 @@ This is a simple implementation of the classic Tic-Tac-Toe game.
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/Tic-Tac-Toe.git
+    https://github.com/amitvermaofficial/Tic-Tac-Toe.git
     ```
 2. Navigate to the project directory:
     ```sh
