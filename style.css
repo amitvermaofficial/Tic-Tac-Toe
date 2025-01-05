@@ -71,6 +71,7 @@ html, body {
     background-size: 80%; /* Make the background image smaller than the box */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent the background image from repeating */
+    cursor: pointer;
 }
 
 .reset {
@@ -82,6 +83,12 @@ html, body {
     color: white;
     border: none;
     cursor: pointer;
+}
+
+.reset:hover {
+    background-color: #555;
+    color: #fff;
+    transform: scale(1.05);
 }
 
 .reset:active {
