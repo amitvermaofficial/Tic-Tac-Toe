@@ -1,61 +1,92 @@
-
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body {
-    background-color: #007991;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#heading {
+    font-size: 40px;
+    font-family: 'Lucida Console', monospace;
+    color: black;
+        text-decoration: underline;
 }
 
 .container {
-    height: 70vh;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('images/bg_image.jpg');
+    background-size: cover;
+}
+
+.game-box {
+    height: 80rem;
+    width: 35rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
 }
 
 .game {
-    height: 60vmin; /* vmin means 1 percent of upper class object*/ 
-    width: 60vmin;
     display: flex;
-    flex-wrap : wrap;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 1.5vmin;
+    gap: 0;
 }
 
 .box {
-    height: 18vmin;
-    width: 18vmin;
-    border-radius: 1rem;
+    margin: 0;
+    padding: 5px;
+    height: 25vmin;
+    width: 25vmin;
     border: none;
-    box-shadow: 0 0 1rem rgba(0,0,0,0.5);
-    font-size: 8vmin;
-    background-color: #E5F9E0;
-    color: black;
+    color: transparent;
+    background-color: #16425b;
+    border: 5px solid #23b5d3;
+    box-sizing: border-box;
+    background-size: 80%; /* Make the background image smaller than the box */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
 }
 
-#reset {
-    padding: 1rem;
-    font-size: 1.3rem;
-    color: #EBE9E9;
-    background-color: #FF5A5F;
-    border-radius: 1rem;
+.reset {
+    border-radius: 25px;
+    padding: 0.8rem 2rem;
+    margin: 5px;
+    font-size: 1.5rem;
+    background-color: black;
+    color: white;
     border: none;
+    cursor: pointer;
 }
 
-.msg {
-    color: #E5F9E0;
-    font-size: 8vmin;
+.winner-message, .draw-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-size: 2rem;
+    text-align: center;
+    z-index: 10;
 }
-
-.msg-container {
-    height: 30vmin;
-} 
 
 .hide {
     display: none;
 }
-

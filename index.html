@@ -8,26 +8,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="msg-container">
-        <p class="msg hide">Winner</p>
-    </div>
-    <main>
-        <h1>Tic Tac Toe</h1>
-        <div class="container">
+    <div class="container">
+        <h1 id="heading" class="heading">Tic Tac Toe</h1>
+        <div class="game-box">
             <div class="game">
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
-                <button class="box"></button>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
             </div>
-        </div>
-        <button id="reset">Reset game</button>
-    </main>
+            <div id="winner-message" class="winner-message hide">Congratulations, Winner is <span id="winner"></span></div>
+            <div id="draw-message" class="draw-message hide">Ooops!!, it a Draw.</div>
+            </div>
+                <button class="reset">reset</button>
+            </div>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
